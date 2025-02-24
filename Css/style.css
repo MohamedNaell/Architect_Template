@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.069);
+}
+/* Start Header */
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.138);
+    padding: 10px 30px;
+    z-index: 999;
+}
+header .logo {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+header .logo span {
+    font-weight: 700;
+}
+header .logo:hover {
+    background-color: rgba(0, 0, 0, 0.198);
+}
+header .links a{
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+header .links a:hover {
+    background-color: rgba(0, 0, 0, 0.198);
+}
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/architect.jpg) no-repeat;
+    background-position: center;
+}
+.main .text h2{
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.main .text h2 span {
+    background-color: rgba(0, 0, 0, 0.688);
+    padding: 15px;
+    margin-right: 10px;
+}
+/* Start Projects  */
+.projects h3 {
+    margin-left: -150px;
+    font-weight: normal;
+    font-size: 23px;
+}
+.projects hr {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-color: rgba(0, 0, 0, 0.069);
+}
+.projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.projects .card {
+    position: relative;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+.projects .card img{
+    max-width: 100%;
+    height: auto;
+}
+.projects .card p {
+position: absolute;
+top: 0;
+left: 0;
+color: white;
+background-color: black;
+padding: 10px 8px;
+}
+/* Start About */
+.about h3 {
+    margin-left: -150px;
+    font-weight: normal;
+    font-size: 23px;
+}
+.about hr {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-color: rgba(0, 0, 0, 0.069);
+}
+.about .cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+.about .cards .card img {
+    width: 100%;
+    height: auto;
+}
+.about .cards .card .name{
+    letter-spacing: 2px;
+}
+.about .cards .card .title {
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: normal;
+    opacity: 50%;
+}
+.about .cards .card .info a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;background-color: rgba(0, 0, 0, 0.198);
+    padding: 10px 85px;
+    margin-top: 20px;
+}
+.about .cards .card .info a:hover {
+    background-color: rgba(0, 0, 0, 0.475);
+}
+/* Start Contact */
+.contact h3 {
+    margin-left: -150px;
+    font-weight: normal;
+    font-size: 23px;
+}
+.contact hr {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-color: rgba(0, 0, 0, 0.069);
+}
+.contact p {
+    margin-left: -150px;
+    font-size: 15px;
+}
+.contact .information input {
+    display: block;
+    width: 100%;
+    margin-top: 20px ;
+    margin-left: -150px;
+    padding: 10px;
+}
+.contact .information input:last-of-type {
+    margin-bottom: 20px;
+}
+.contact .information input::placeholder{
+    font-size: 15px;
+}
+.contact .information button {
+    margin-left: -150px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+.contact .information button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+/* Start Map */
+.map div {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/map.jpg);
+    background-position: center;
+}
+/* Start Footer */
+footer {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+footer span a {
+    color: white;
+    font-size: 15px;
+}
+footer span a:hover {
+    color: rgb(27, 185, 27);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    header .links a {
+        font-size: 13px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main .text h2 {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .projects .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projects .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact .information input,
+    .contact .information button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 20px 15px;
+    }
+
+    footer span a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    header .links a {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .main .text h2 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .projects .cards {
+        flex-direction: column;
+    }
+
+    .projects .card {
+        flex: 1 1 100%;
+    }
+
+    .about .cards {
+        flex-direction: column;
+    }
+
+    .contact h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .contact .information input,
+    .contact .information button {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    footer span a {
+        font-size: 12px;
+    }
+}
+
